@@ -4,6 +4,9 @@
 
 This project implements a deep learning model based on the Transformer architecture to perform real-time human activity recognition (HAR) from video inputs. By capturing both spatial and temporal features, the model aims to classify human actions accurately and efficiently. The approach improves upon traditional CNN-LSTM models, offering better scalability and performance for sequential video data.
 
+![HAR process(Approach by Transformers)](C:\Users\hp\Desktop\HAR\harimg.jpg)
+
+
 ---
 
 ## Features
