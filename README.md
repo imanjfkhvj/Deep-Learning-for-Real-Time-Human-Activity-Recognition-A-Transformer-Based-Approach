@@ -4,12 +4,15 @@
 
 This project implements a deep learning model based on the Transformer architecture to perform real-time human activity recognition (HAR) from video inputs. By capturing both spatial and temporal features, the model aims to classify human actions accurately and efficiently. The approach improves upon traditional CNN-LSTM models, offering better scalability and performance for sequential video data.
 
-![HAR process(Approach by Transformers)](https://www.mdpi.com/sensors/sensors-25-00301/article_deploy/html/images/sensors-25-00301-g001.png)
+> **Architecture Credit:**  
+Our model is inspired by a pre-existing Transformer architecture used in a previous research project. The original implementation can be found here:  
+**[SpATr: A Spatial-Temporal Transformer for HAR](https://www.mdpi.com/1424-8220/23/1/123)**
 
+![HAR process(Approach by Transformers)](https://www.mdpi.com/sensors/sensors-25-00301/article_deploy/html/images/sensors-25-00301-g001.png)
 
 ---
 
-## Features
+##  Features
 
 - Real-time recognition of human activities from video input  
 - Transformer-based architecture for temporal modeling  
@@ -19,7 +22,7 @@ This project implements a deep learning model based on the Transformer architect
 
 ---
 
-## Tools & Technologies
+##  Tools & Technologies
 
 - Python  
 - PyTorch  
@@ -30,53 +33,39 @@ This project implements a deep learning model based on the Transformer architect
 
 ---
 
-## Dataset
+##  Important Notes
 
-This project uses 2D video datasets adapted for real-time action recognition. While inspired by the 3D-based SpATr model, this implementation focuses on lightweight 2D sequence processing.
+>  **Sensitive Code**  
+Some parts of our training notebook contain sensitive or private logic and have been removed from the public repository for confidentiality reasons. If you’re interested in the full implementation or further guidance, feel free to contact me at:  
+ **imane.bensadik@gmail.com**
+
+>  **Pair**  
+This project was made possible thanks to my amazing project partner:  
+ **@hajarCH02** <3
 
 ---
 
-## Model Architecture
+##  Dataset
+
+We worked with adapted 2D video datasets for real-time HAR. While our method draws inspiration from 3D Transformer approaches like SpATr, our focus was on building a lightweight and fast 2D sequence solution.
+
+---
+
+##  Model Architecture
 
 The model separates spatial and temporal processing:
 
-- Spatial feature extraction via custom CNN layers or pretrained backbones  
-- Temporal modeling using a Transformer encoder with positional encoding and multi-head self-attention  
-- Fully connected layers for classification  
+- **Spatial features:** Extracted via lightweight CNN layers or pretrained backbones  
+- **Temporal features:** Modeled using a Transformer encoder with multi-head self-attention  
+- **Classification:** Final fully connected layers  
 
 ---
 
-## How to Run
-
-1. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. **Preprocess your dataset**  
-   Place your video sequences or extracted frames in the `data/` folder.
-
-3. **Train the model**
-   ```bash
-   python avec chaque epoch.ipy
-   ```
-
-4. **Run real-time activity recognition using webcam**
-   ```bash
-   python test.py 
-   python vitAvecCamera.py
-   ```
-
-
-
 ##  Future Work
 
-- Optimize performance for low-resource or embedded devices  
-- Extend to multimodal input (e.g., audio + video)  
+- Optimize for low-resource and edge devices  
 - Explore ViViT and hybrid CNN-Transformer models  
-
-
-
+- Add multimodal input (e.g., audio + video)  
 
 
 
