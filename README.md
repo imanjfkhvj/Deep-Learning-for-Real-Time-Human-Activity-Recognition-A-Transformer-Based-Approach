@@ -6,7 +6,7 @@ This project implements a deep learning model based on the Transformer architect
 
 > **Architecture Credit:**  
 Our model is inspired by a pre-existing Transformer architecture used in a previous research project. The original implementation can be found here:  
-**[SpATr: A Spatial-Temporal Transformer for HAR](https://www.mdpi.com/1424-8220/23/1/123)**
+**[SpATr: A Spatial-Temporal Transformer for HAR]([https://www.mdpi.com/1424-8220/23/1/123](https://github.com/h-bouzid/spatr/blob/main/motion_transformer/vit.py))**
 
 ![HAR process(Approach by Transformers)](https://www.mdpi.com/sensors/sensors-25-00301/article_deploy/html/images/sensors-25-00301-g001.png)
 
